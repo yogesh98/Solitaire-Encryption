@@ -4,10 +4,11 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.Random;
 
+
 /**
  * This class implements a simplified version of Bruce Schneier's Solitaire
  * Encryption algorithm.
- * 
+ *
  * @author RU NB CS112
  */
 public class Solitaire {
@@ -230,7 +231,7 @@ public class Solitaire {
 	 * the next card value as key. But if that value is 27 or 28, repeats the
 	 * whole process (Joker A through Count Cut) on the latest (current) deck,
 	 * until a value less than or equal to 26 is found, which is then returned.
-	 * 
+	 *
 	 * @return Key between 1 and 26
 	 */
 	int getKey() {
@@ -262,7 +263,7 @@ public class Solitaire {
 
 	/**
 	 * Utility method that prints a circular linked list, given its rear pointer
-	 * 
+	 *
 	 * @param rear
 	 *            Rear pointer
 	 */
@@ -281,7 +282,7 @@ public class Solitaire {
 
 	/**
 	 * Encrypts a message, ignores all characters except upper case letters
-	 * 
+	 *
 	 * @param message
 	 *            Message to be encrypted
 	 * @return Encrypted message, a sequence of upper case letters only
@@ -317,7 +318,7 @@ public class Solitaire {
 
 	/**
 	 * Decrypts a message, which consists of upper case letters only
-	 * 
+	 *
 	 * @param message
 	 *            Message to be decrypted
 	 * @return Decrypted message, a sequence of upper case letters only

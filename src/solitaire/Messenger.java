@@ -6,18 +6,19 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
+
 public class Messenger {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	throws IOException {
-		
+
 		Solitaire ss = new Solitaire();
-		
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter deck file name => ");
-		
+
 		Scanner sc = new Scanner(new File(br.readLine()));
 		ss.makeDeck(sc);
-		
+
 		System.out.print("Encrypt or decrypt? (e/d), press return to quit => ");
 		String inp = br.readLine();
 		if (inp.length() == 0) {
